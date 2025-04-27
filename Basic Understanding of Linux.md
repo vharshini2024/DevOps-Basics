@@ -54,3 +54,31 @@ Everything is a file or folder in Linux — even devices are treated as files.
 ## Superuser Commands
 - `sudo <command>` → Execute a command as superuser (admin)
 
+  # Linux Slightly Advanced Topics
+
+---
+
+## 1. Users and Groups
+
+- In Linux, **users** are like people who use the system.
+- **Groups** are like a team of users, sharing permissions.
+
+### Commands:
+
+| Purpose | Command |
+|:---|:---|
+| Create a new user | `sudo adduser <username>` |
+| Create a new group | `sudo groupadd <groupname>` |
+| Add user to a group | `sudo usermod -aG <groupname> <username>` |
+| List all users | `cat /etc/passwd` |
+| List all groups | `cat /etc/group` |
+| Switch user | `su - <username>` |
+
+### Example:
+```bash
+sudo adduser harshini
+sudo groupadd devops_team
+sudo usermod -aG devops_team harshini
+su - harshini
+
+
