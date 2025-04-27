@@ -83,7 +83,6 @@ su - harshini
 
 
 
-```markdown
 # `chmod` and `chown` Commands 
 
 ---
