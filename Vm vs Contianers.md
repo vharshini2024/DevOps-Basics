@@ -79,24 +79,25 @@ you just **package** your app + libraries together into a **small box** (Contain
        |
   [Hypervisor]
        |
-  -----------------
-  |   |    |      |
-[VM][VM][VM][VM]
-  |    |   |    |
-[OS][OS][OS][OS]
-  |    |   |    |
-[Apps][Apps][Apps][Apps]
+  -----------------------------
+  |           |           |           |
+[VM]       [VM]       [VM]       [VM]
+  |           |           |           |
+[OS]       [OS]       [OS]       [OS]
+  |           |           |           |
+[App]     [App]     [App]     [App]
+
 
 **With Containers**
 [Physical Server]
        |
-[Operating System]
+[Host Operating System]
        |
 [Docker / Container Runtime]
        |
-  -----------------------
-  |    |     |         |
-[Container][Container][Container][Container]
-    |      |      |         |
-  [App] [App] [App] [App]
+  -----------------------------------------
+  |           |           |           |
+[Container] [Container] [Container] [Container]
+     |           |           |           |
+   [App]       [App]       [App]       [App]
 
