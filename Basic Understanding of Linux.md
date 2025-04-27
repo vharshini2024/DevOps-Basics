@@ -82,3 +82,99 @@ sudo usermod -aG devops_team harshini
 su - harshini
 
 
+Sure! Here's the full **GitHub Markdown** version you can just copy-paste:
+
+```markdown
+# `chmod` and `chown` Commands Explained
+
+---
+
+## `chmod` (Change File Permissions)
+
+**`chmod`** is used to change the permissions (who can read, write, or execute) of a file or directory.
+
+### Permission Types:
+- **r** = read
+- **w** = write
+- **x** = execute (run)
+
+---
+
+### Numeric Permission Values:
+| Permission | Value |
+|:---|:---|
+| Read | 4 |
+| Write | 2 |
+| Execute | 1 |
+
+---
+
+### Combining Permissions:
+| Action | Number | Description |
+|:---|:---|:---|
+| Read-only | 4 | Only read is allowed |
+| Write-only | 2 | Only write is allowed |
+| Execute-only | 1 | Only execute is allowed |
+| Read + Write | 6 | Read + Write allowed |
+| Read + Execute | 5 | Read + Execute allowed |
+| Full access (Read + Write + Execute) | 7 | Full access allowed |
+
+---
+
+### Example Commands:
+
+- Give full permission to **owner** and **read-only** to others:
+  ```bash
+  chmod 744 file.txt
+  ```
+
+- Give **read + write** to **owner + group**, and **read** to others:
+  ```bash
+  chmod 664 file.txt
+  ```
+
+---
+
+## `chown` (Change File Owner)
+
+**`chown`** is used to change the ownership of a file or directory (who owns the file and which group it belongs to).
+
+### Example Commands:
+
+- Change owner of file to `harshini`:
+  ```bash
+  sudo chown harshini file.txt
+  ```
+
+- Change owner and group of file to `harshini` and `devops_team`:
+  ```bash
+  sudo chown harshini:devops_team file.txt
+  ```
+
+---
+
+## Quick Reference Summary:
+
+| Action | Command Format |
+|:---|:---|
+| Change file permissions | `chmod 755 file.txt` |
+| Change file owner | `chown user file.txt` |
+| Change file owner and group | `chown user:group file.txt` |
+
+---
+
+### Visual Summary:
+
+#### File Permissions (`chmod`):
+
+```
+User | Group | Others
+  7     5      5
+(rwx) (r-x)  (r-x)
+```
+
+**Command:**
+```bash
+chmod 755 file.txt
+```
+
