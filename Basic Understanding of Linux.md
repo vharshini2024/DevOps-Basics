@@ -82,10 +82,9 @@ sudo usermod -aG devops_team harshini
 su - harshini
 
 
-Sure! Here's the full **GitHub Markdown** version you can just copy-paste:
 
 ```markdown
-# `chmod` and `chown` Commands Explained
+# `chmod` and `chown` Commands 
 
 ---
 
