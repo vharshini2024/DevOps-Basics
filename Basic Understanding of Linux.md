@@ -1,7 +1,7 @@
 **Linux** is an operating system — just like Windows and Mac , An **Operating System (OS)** is software that manages hardware and software resources on a computer or device. It acts as an interface between the user and the computer hardware..
 It's open source, very lightweight, and mostly used on servers.
 In Linux, you interact a lot using commands (via Terminal / Shell / Bash).
-Everything is a file or folder in Linux — even devices are treated as fi*les.
+Everything is a file or folder in Linux — even devices are treated as files.
 
 **BASIC COMMANDS:** 
 
