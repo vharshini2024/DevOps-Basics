@@ -4,6 +4,9 @@ In Linux, you interact a lot using commands (via Terminal / Shell / Bash).
 Everything is a file or folder in Linux — even devices are treated as fi*les.
 
 **BASIC COMMANDS:** 
+
+
+
 pwd # Present working directory  
 cd # Change to the current directory  
 ls # List files and directories  
