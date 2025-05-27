@@ -79,4 +79,42 @@ A: Classless Inter-Domain Routing — it determines how many bits are used for n
 
 ---
 
-✅ *Perfect for DevOps, Cloud, Sysadmin & Interview Prep!*
+# OSI Model vs TCP/IP Model
+
+This document compares the OSI and TCP/IP networking models, including their layers and functions.
+
+## 📊 Comparison Table
+
+| **OSI Model (7 Layers)** | **TCP/IP Model (4 Layers)** | **Function**                                           |
+|--------------------------|------------------------------|--------------------------------------------------------|
+| 7. Application           | 4. Application               | User interface & protocols (HTTP, FTP, DNS)            |
+| 6. Presentation          |                              | Data encoding/encryption (SSL, JPEG)                   |
+| 5. Session               |                              | Manages sessions (RPC, NetBIOS)                        |
+| 4. Transport             | 3. Transport                 | End-to-end communication (TCP, UDP)                    |
+| 3. Network               | 2. Internet                  | Routing & logical addressing (IP, ICMP)                |
+| 2. Data Link             | 1. Network Access            | MAC addressing, framing, error detection               |
+| 1. Physical              |                              | Physical medium for data transmission (cables, etc.)   |
+
+---
+
+## 💡 Key Differences
+
+- **OSI Model** is a 7-layer conceptual framework.
+- **TCP/IP Model** is a 4-layer practical implementation used in real-world networks.
+- **Presentation** and **Session** layers of OSI are part of the **Application** layer in TCP/IP.
+- Both models use the **Transport** layer for managing connections and delivering data reliably.
+
+---
+
+## 🎯 Interview Tip
+
+> **Q: Why are there two models (OSI and TCP/IP)?**  
+> **A:** OSI is a theoretical framework used for teaching and network design.  
+> TCP/IP is the actual protocol suite used on the Internet.
+
+---
+
+## ✅ Summary
+
+- OSI = Theoretical, detailed, used in academia and design.
+- TCP/IP = Practical, used in actual networking systems.
